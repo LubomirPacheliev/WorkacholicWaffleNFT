@@ -10,12 +10,15 @@ const ConnectHeader = () => {
             if (solana) {
                 if (solana.isPhantom) {
                     const response = await solana.connect({onlyIfTrusted: true});
-                    if (response.publicKey) setpKey(response.publicKey);
+                    setpKey(response.publicKey);
                 }  else {
-                    alert("Go get a phantom wallet, my man");
+                    window.open("https://phantom.app/", "_blank");
                 }
+            } else {
+                throw new Error('solana is undefined');
             }
         } catch(e) {
+            setpKey(null);
             console.error(e);
         }
     }
@@ -27,8 +30,8 @@ const ConnectHeader = () => {
     return (
         <header className="connect-wallet-header">
         <h1>Hello, gamer 👻</h1>
-        {!pKey && <p>your phantom wallet is connected</p>}
-        {pKey && <p>why don't you connect your phantom wallet</p>}
+        {pKey && <p>your phantom wallet is connected</p>}
+        {!pKey && <p>why don't you connect your phantom wallet</p>}
         <ConnectButton {...{pKey, setpKey}} />
       </header>
     )

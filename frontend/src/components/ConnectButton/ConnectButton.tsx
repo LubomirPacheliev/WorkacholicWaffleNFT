@@ -16,7 +16,7 @@ const ConnectButton = ({pKey, setpKey}: pKeyProps) => {
             console.error(e);
         }
     }
-    return (<>{pKey && <button className="connect-wallet-btn draw" onClick={connectWallet}>connect</button>}</>);
+    return (<>{!pKey && <button className="connect-wallet-btn draw" onClick={connectWallet}>connect</button>}</>);
 }
 
 export default ConnectButton;
