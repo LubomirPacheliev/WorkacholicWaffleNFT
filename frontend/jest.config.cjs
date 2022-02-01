@@ -1,6 +1,5 @@
-const { defaults } = require('jest-config');
-
 const config = {
+    preset: 'ts-jest',
     verbose: true,
     errorOnDeprecated: true,
     moduleFileExtensions: ['js', 'jsx', 'ts', 'tsx'],
