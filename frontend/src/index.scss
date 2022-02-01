@@ -10,7 +10,6 @@ $red: #f45e61;
 $purple: #6477b9;
 $blue: #0eb7da;
 
-@import "./btn_styling.scss";
 @mixin setFlex() {
     display: flex;
     align-items: center;
