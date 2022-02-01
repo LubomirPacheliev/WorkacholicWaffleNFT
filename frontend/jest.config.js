@@ -1,16 +1,16 @@
-import { defaults } from 'jest-config';
+const { defaults } = require('jest-config');
 
 const config = {
     verbose: true,
     errorOnDeprecated: true,
-    moduleFileExtensions: [...defaults, 'ts', 'tsx'],
+    moduleFileExtensions: ['js', 'jsx', 'ts', 'tsx'],
     extraGlobals: [], // in case I need extra props to be defined inside the jest VM
 
     // notify: true,
     // notifyMode: 'failure'
 }
 
-export default config;
+module.exports = config;
 
 // this exists in case you need to change the testing env
 //@jest-environment jsdom

@@ -1,5 +1,5 @@
 import React from "react";
-import ConnectHeader from "./components/LandingPage/ConnectHeader";
+import ConnectHeader from "./components/ConnectHeader/ConnectHeader";
 
 const App = () => {
   return (
