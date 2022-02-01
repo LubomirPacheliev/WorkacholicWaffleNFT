@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+@import "./btn_styling.scss";
+
+$background: #fefefe;
+$text: #4b507a;
+
+$cyan: #60daaa;
+$yellow: #fbca67;
+$orange: #ff8a30;
+$red: #f45e61;
+$purple: #6477b9;
+$blue: #0eb7da;
+
+@mixin setFlex() {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+body {
+    background-color: rgb(24, 22, 22);
+    font-family: 'Poppins', sans-serif;
+}
+
+.App {
+    height: 90vh;
+    color: white;
+    @include setFlex();
+    line-height: 25px;
+
+    h1 {
+        @include setFlex();
+        font-size: 3em;
+    }
+
+    p {
+        font-size: 1.3em;
+    }
+}
+
+.connect-wallet-btn {
+    width: 50%;
+}
