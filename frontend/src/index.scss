@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
-@import "./btn_styling.scss";
 
-$background: #fefefe;
+$background: rgb(24, 22, 22);
 $text: #4b507a;
 
 $cyan: #60daaa;
@@ -11,6 +10,7 @@ $red: #f45e61;
 $purple: #6477b9;
 $blue: #0eb7da;
 
+@import "./btn_styling.scss";
 @mixin setFlex() {
     display: flex;
     align-items: center;
@@ -18,7 +18,7 @@ $blue: #0eb7da;
 }
 
 body {
-    background-color: rgb(24, 22, 22);
+    background-color: $background;
     font-family: 'Poppins', sans-serif;
 }
 
@@ -26,15 +26,20 @@ body {
     height: 90vh;
     color: white;
     @include setFlex();
-    line-height: 25px;
 
-    h1 {
+    header.connect-wallet-header {
         @include setFlex();
-        font-size: 3em;
-    }
+        flex-direction: column;
+        line-height: 15px;
 
-    p {
-        font-size: 1.3em;
+        h1 {
+            @include setFlex();
+            font-size: 3em;
+        }
+    
+        p {
+            font-size: 1.3em;
+        }
     }
 }
 

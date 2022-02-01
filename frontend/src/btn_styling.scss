@@ -27,7 +27,7 @@ button {
 }
 
 .draw {
-    transition: color 0.25s;
+    transition: color 0.2s;
 
   &::before,
   &::after {
@@ -68,8 +68,8 @@ button {
     border-bottom-color: $cyan; 
     border-left-color: $cyan;
     transition:
-      border-color 0s ease-out 0.5s, 
-      width 0.25s ease-out 0.5s, 
-      height 0.25s ease-out 0.75s; 
+      border-color 0s ease-out 0.3s, 
+      width 0.25s ease-out 0.3s, 
+      height 0.25s ease-out 0.5s; 
   }
 }
