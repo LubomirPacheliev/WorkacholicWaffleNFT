@@ -2,6 +2,9 @@ const config = {
     preset: 'ts-jest',
     verbose: true,
     errorOnDeprecated: true,
+    moduleNameMapper: {
+        "^.+\\.(css|less|scss)$": "babel-jest"
+    },
     moduleFileExtensions: ['js', 'jsx', 'ts', 'tsx'],
     extraGlobals: [], // in case I need extra props to be defined inside the jest VM
 

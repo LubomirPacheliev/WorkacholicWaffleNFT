@@ -1,3 +1,7 @@
+/**
+ * @jest-environment jsdom
+ */
+
 import React from "react";
 import { render, getByText, fireEvent } from "@testing-library/react";
 import ConnectHeader from './ConnectHeader';
