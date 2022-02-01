@@ -11,9 +11,9 @@ const ConnectHeader = () => {
                 if (solana.isPhantom) {
                     const response = await solana.connect({onlyIfTrusted: true});
                     if (response.publicKey) setpKey(response.publicKey);
-                }    
-            } else {
-                alert("Go get a phantom wallet, my man");
+                }  else {
+                    alert("Go get a phantom wallet, my man");
+                }
             }
         } catch(e) {
             console.error(e);
