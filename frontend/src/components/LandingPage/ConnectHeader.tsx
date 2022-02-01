@@ -6,16 +6,16 @@ const ConnectHeader = () => {
 
     const checkPhantom = async () => {
         try {
-            const { solana }: any = window;
-            if (solana) {
+            // @ts-ignore
+            // BUG: solana is initially undefined in window so the user has to click connect each time
+            const { solana } = window;
+            if ("solana" in window) {
                 if (solana.isPhantom) {
                     const response = await solana.connect({onlyIfTrusted: true});
                     setpKey(response.publicKey);
                 }  else {
                     window.open("https://phantom.app/", "_blank");
                 }
-            } else {
-                throw new Error('solana is undefined');
             }
         } catch(e) {
             setpKey(null);

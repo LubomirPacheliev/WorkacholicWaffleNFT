@@ -9,7 +9,8 @@ interface pKeyProps {
 const ConnectButton = ({pKey, setpKey}: pKeyProps) => {
     const connectWallet = async () => {
         try {
-            const { solana }: any = window;
+            // @ts-ignore
+            const { solana } = window;
             const response = await solana.connect();
             setpKey(response.publicKey);
         } catch (e) {
