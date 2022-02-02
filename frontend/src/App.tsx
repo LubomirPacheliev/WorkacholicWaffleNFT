@@ -1,12 +1,12 @@
-import React from "react";
-import ConnectHeader from "./components/ConnectHeader/ConnectHeader";
+import React from 'react'
+import ConnectHeader from './components/ConnectHeader/ConnectHeader'
 
 const App = () => {
   return (
-    <div className="App">
+    <div className='App'>
       <ConnectHeader />
     </div>
-  );
+  )
 }
 
-export default App;
+export default App

@@ -9,13 +9,14 @@
     "@types/react": "^17.0.38",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
-    "react-scripts": "5.0.0"
+    "react-scripts": "5.0.0",
+    "ts-standard": "^11.0.0"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "jest -c jest.config.cjs --watchAll",
-    "eject": "react-scripts eject"
+    "ts-fix": "ts-standard --fix"
   },
   "eslintConfig": {
     "extends": [
