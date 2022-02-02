@@ -10,6 +10,12 @@ fn process_instructions(
     accounts: &[AccountInfo],
     instruction_data: &[u8]
 ) -> ProgramResult {
-    msg!("Shutuuuup! Dumb!");
+    let key: &u8 = instruction_data.first().unwrap(); // remove unwrap before pushing to prod
+    
+    match key {
+        0 => msg!("zerooo!"),
+        1 => msg!("oooone!"),
+        _ => msg!("error! dumb!")
+    }
     Ok(())
 }
