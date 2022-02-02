@@ -10,7 +10,11 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v2
 
+      - name: Convert sass into css so the linter shuts up
+      - uses: actions/sass-build@0.4.8
+
       - name: Run Super-Linter
         uses: github/super-linter@v3.17.0
         env:
           DEFAULT_BRANCH: main
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
