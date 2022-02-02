@@ -6,9 +6,8 @@ const ConnectHeader = () => {
 
     const checkPhantom = async () => {
         try {
-            // @ts-ignore
             // BUG: solana is initially undefined in window so the user has to click connect each time
-            const { solana } = window;
+            const { solana }: any = window;
             if ("solana" in window) {
                 if (solana.isPhantom) {
                     const response = await solana.connect({onlyIfTrusted: true});
