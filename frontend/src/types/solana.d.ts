@@ -1,4 +1,4 @@
-declare module global {
+export declare module global {
     interface Window { 
 		solana: any; 
 	}
