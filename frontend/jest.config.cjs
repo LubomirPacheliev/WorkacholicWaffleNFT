@@ -1,18 +1,18 @@
 const config = {
-    preset: 'ts-jest',
-    verbose: true,
-    errorOnDeprecated: true,
-    moduleNameMapper: {
-        "^.+\\.(css|less|scss)$": "babel-jest"
-    },
-    moduleFileExtensions: ['js', 'jsx', 'ts', 'tsx'],
-    extraGlobals: [], // in case I need extra props to be defined inside the jest VM
+  preset: 'ts-jest',
+  verbose: true,
+  errorOnDeprecated: true,
+  moduleNameMapper: {
+    '^.+\\.(css|less|scss)$': 'babel-jest'
+  },
+  moduleFileExtensions: ['js', 'jsx', 'ts', 'tsx'],
+  extraGlobals: [] // in case I need extra props to be defined inside the jest VM
 
-    // notify: true,
-    // notifyMode: 'failure'
+  // notify: true,
+  // notifyMode: 'failure'
 }
 
-module.exports = config;
+module.exports = config
 
 // this exists in case you need to change the testing env
-//@jest-environment jsdom
+// @jest-environment jsdom

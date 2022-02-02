@@ -1,9 +1,9 @@
-import path from 'path';
+import path from 'path'
 
 export default {
   mode: 'development',
   entry: {
-    main: path.resolve(__dirname, './src/index.tsx'),
+    main: path.resolve(__dirname, './src/index.tsx')
   },
   module: {
     rules: [
@@ -19,6 +19,6 @@ export default {
   },
   output: {
     path: path.resolve(__dirname, './client/dist'),
-    filename: 'bundle.js',
-  },
-};
+    filename: 'bundle.js'
+  }
+}
