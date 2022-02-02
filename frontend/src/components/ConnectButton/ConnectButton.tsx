@@ -1,5 +1,4 @@
 import React, { Dispatch } from 'react'
-import './btn_styling.scss'
 
 interface pKeyProps {
   pKey: String | null
